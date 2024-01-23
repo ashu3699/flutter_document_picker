@@ -55,7 +55,7 @@ class FlutterDocumentPickerDelegate(
             intent.type = "*/*"
         }
         if(isMultipleSelection == true){
-            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true);
+            intent.putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
         }
 
         activity.startActivityForResult(intent, REQUEST_CODE_PICK_FILE)
@@ -246,12 +246,12 @@ class FileCopyTaskLoaderResult {
 
     constructor(result: String) {
         this.result = result
-        this.error = null;
+        this.error = null
     }
 
     constructor(error: Exception) {
-        this.result = null;
-        this.error = error;
+        this.result = null
+        this.error = error
     }
 
     fun isSuccess(): Boolean {
